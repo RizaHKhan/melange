@@ -4,97 +4,131 @@
 }
 
 .container {
-    border: 1px solid;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-
+    
     .header {
+        //grid section
         grid-column: 1 / -1;
-        border: 1px solid;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-
+        
+        //spacing
+        margin: 20px auto; 
+        
         .title {
-            border: 1px solid;
+            //grid section
             grid-column: 1 / -1;
+                        
+            //text-styling
+            font-size: 3.75rem; 
+            text-align: center;
+            font-weight: 600;
         }
 
         .subtitle {
-            border: 1px solid;
-            grid-column: 1 / 7;
+            grid-column: 1 / -1;
+
+            //text-styling
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .registration {
-            border: 1px solid;
-            grid-column: 7 / 13;
+        .form-login {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 250px;
+            margin: 20px auto;
+            //grid section - child
+            grid-column: 1 / -1;
+            
+            //grid section - parent
+            display:grid;
+            grid-template-columns: repeat(12, 1fr);
+
+            h4 {
+                //grid
+                grid-column: 1 / -1;
+            }
+
+            input {
+                //grid
+                grid-column: 1 / -1;
+                margin: .25em 0;
+                padding: .25em;
+               
+            }
+
+            button {
+
+                grid-column: 1 / -1;
+                margin: .25em 0;
+                padding: .25em;
+            }
+
+            //text-styling
+            text-align: center;
         }
     }
 
     .body {
+        //grid- child
         grid-column: 1 / -1;
-        border: 1px solid;
+
+        //grid-parent
         display: grid;
         grid-template-columns: repeat(12, 1fr);
 
-        .img {
+        //spacing
+        margin-bottom: 20px;
+
+        .form-registration {
+            //grid-child
             grid-column: 1 / -1;
-            border: 1px solid;
-        }
 
+             //spacing
+
+             margin: 20px auto;
+
+            //grid-parent
+            form {
+                text-align: center;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                margin: auto;
+
+                font-family: Arial, Helvetica, sans-serif;
+                h4 {
+                    grid-column: 1 / -1;
+                }
+
+                .form-group {
+                    
+                    grid-column: 1 / -1;
+                    width: 250px;
+                    display:grid;
+
+                    input {
+                        margin: .25em 0;
+                        padding: .25em;
+                        text-align: center;
+                    }
+
+                    button {
+                        margin: .25em 0;
+                        padding: .25em;
+                    }
+                }
+        }
+        }        
         .about {
-            border: 1px solid;
-            grid-column: 1 / 7;
-        }
-
-        .quote {
-            border: 1px solid;
-            grid-column: 7 / 13;
+            grid-column: 1 / -1;
+            margin: 20px auto;
+            width: 450px;
         }
     }
-
     .footer {
         grid-column: 1 / -1;
-        border: 1px solid;
     }
 
 }
 
-@media (min-width: 768px) {
-
-   .container {
-
-    .header {
-        .title {
-            grid-column: 1 / 7;
-        }
-
-        .subtitle {
-            
-        }
-
-        .registration {
-            grid-column: 7 / 13;
-            grid-row: 1 / 3;
-
-            
-        }
-    }
-
-    .body {
-        .img {
-            grid-column: 1 / 7;
-        }
-
-        .about {
-            grid-column: 1 / 7;
-        }
-
-        .quote {
-            grid-column: 7 /13;
-            grid-row: 1  / 3;
-        }
-    }
-
-   }
-
-}
