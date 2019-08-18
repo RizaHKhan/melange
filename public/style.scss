@@ -2,9 +2,10 @@
     padding: 0px;
     margin: 0px;
     color: white;
-
+    font-family: Arial, Helvetica, sans-serif;
     button {
         color: black;
+
     }
 }
 
@@ -142,6 +143,8 @@ body {
             grid-column: 1 / -1;
             margin: 20px auto;
             width: 380px;
+            line-height: 1.5em;
+            text-align: center;
         }
     }
     .footer {
