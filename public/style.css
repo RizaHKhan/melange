@@ -4,6 +4,10 @@
   color: white;
 }
 
+* button {
+  color: black;
+}
+
 body {
   background: url("./img/Hobbes-02.jpg") no-repeat;
   background-size: cover;
