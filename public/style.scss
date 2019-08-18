@@ -3,6 +3,11 @@
     margin: 0px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+
+    input {
+        color: black;
+    }
+
     button {
         color: black;
 
@@ -12,10 +17,9 @@
 body {
     background: url('./img/Hobbes-02.jpg') no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 1500px;
     overflow: hidden;
     z-index: -1;
-    
 }
 
 .container {
@@ -23,7 +27,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     margin: 20px auto;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 500px;
+    width: 450px;
     .header {
         //grid section
         grid-column: 1 / -1;
