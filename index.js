@@ -23,5 +23,9 @@ app.get('/', function(req, res) {
     res.render('landing')
 })
 
+app.get('/main', function(req, res) {
+    res.render('main')
+})
+
 
 app.listen(port);
