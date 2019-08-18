@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    
+    
+    margin-top: 2em;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    
+
+    .left {
+        grid-column: span 1;
+
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .center {
+        margin: auto;
+        
+        grid-column: span 4;
+    }
+    
+    .right {
+        margin: auto;
+        grid-column: span 7;
+
+    }
+
+    
+}

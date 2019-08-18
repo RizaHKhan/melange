@@ -1,1 +1,32 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.container .left {
+  grid-column: span 1;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.container .center {
+  margin: auto;
+  grid-column: span 4;
+}
+
+.container .right {
+  margin: auto;
+  grid-column: span 7;
+}
+/*# sourceMappingURL=main.css.map */

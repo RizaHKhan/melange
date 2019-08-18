@@ -1,6 +1,13 @@
 * {
   padding: 0px;
   margin: 0px;
+  color: white;
+}
+
+body {
+  background: url("./img/Hobbes-02.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .container {
@@ -8,6 +15,9 @@
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 500px;
 }
 
 .container .header {
