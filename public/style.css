@@ -109,7 +109,7 @@
 .container .body .about {
   grid-column: 1 / -1;
   margin: 20px auto;
-  width: 400px;
+  width: 380px;
 }
 
 .container .footer {
