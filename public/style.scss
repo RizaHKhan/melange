@@ -12,9 +12,10 @@
 body {
     background: url('./img/Hobbes-02.jpg') no-repeat;
     background-size: cover;
+    height: 100%;
     overflow: hidden;
-    z-index: -1
-    position: absolute;
+    z-index: -1;
+    
 }
 
 .container {
