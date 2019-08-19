@@ -26,7 +26,7 @@ body {
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
   margin: 20px auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 400px;
 }
 
@@ -80,6 +80,14 @@ body {
   padding: .25em;
 }
 
+.container .header .about {
+  grid-column: 1 / -1;
+  margin: 20px auto;
+  width: 380px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
 .container .body {
   grid-column: 1 / -1;
   display: -ms-grid;
@@ -121,20 +129,62 @@ body {
   text-align: center;
 }
 
-.container .body .form-registration form .form-group button {
-  margin: .25em 0;
-  padding: .25em;
-}
-
-.container .body .about {
-  grid-column: 1 / -1;
-  margin: 20px auto;
-  width: 380px;
-  line-height: 1.5em;
-  text-align: center;
-}
-
 .container .footer {
   grid-column: 1 / -1;
+}
+
+button {
+  height: 45px;
+  margin: .25em 0;
+  padding: .25em;
+  border: 10px;
+  border-radius: 10px;
+  font-size: 1.20rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+}
+
+.registerBtn {
+  background-color: black;
+  color: white;
+}
+
+.facebookBtn {
+  background-color: #3b5998;
+  color: white;
+}
+
+.facebookBtn:hover {
+  background-color: white;
+  color: #3b5998;
+}
+
+.googleBtn {
+  background-color: #DB4437;
+  color: white;
+}
+
+.googleBtn:hover {
+  background-color: white;
+  color: #DB4437;
+}
+
+input {
+  height: 35px;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

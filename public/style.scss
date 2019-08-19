@@ -25,7 +25,7 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 20px auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 400px;
     .header {
         //grid section
@@ -91,6 +91,15 @@ body {
 
             //text-styling
             text-align: center;
+
+          
+        }
+        .about {
+            grid-column: 1 / -1;
+            margin: 20px auto;
+            width: 380px;
+            line-height: 1.5em;
+            text-align: center;
         }
     }
 
@@ -137,20 +146,11 @@ body {
                         text-align: center;
                     }
 
-                    button {
-                        margin: .25em 0;
-                        padding: .25em;
-                    }
+                   
                 }
         }
         }        
-        .about {
-            grid-column: 1 / -1;
-            margin: 20px auto;
-            width: 380px;
-            line-height: 1.5em;
-            text-align: center;
-        }
+ 
     }
     .footer {
         grid-column: 1 / -1;
@@ -158,3 +158,61 @@ body {
 
 }
 
+button {
+    height: 45px;
+    margin: .25em 0;
+    padding: .25em;
+    border:10px;
+    border-radius: 10px;
+    font-size: 1.20rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    
+}
+
+button:hover {
+    color:black;
+    background-color: white;
+}
+
+.registerBtn {
+    background-color: black;
+    color: white;
+}
+
+
+
+.facebookBtn {
+    background-color: #3b5998;
+    color: white;
+}
+
+.facebookBtn:hover {
+    background-color: white;
+    color: #3b5998;;
+}
+
+.googleBtn {
+    background-color:#DB4437;
+    color: white;
+}
+
+.googleBtn:hover {
+    background-color: white;
+    color: #DB4437;
+}
+
+input {
+    height: 35px;
+    border-radius: 10px;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
